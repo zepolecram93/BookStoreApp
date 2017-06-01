@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es" ng-app="store">
+<head>
+	<meta charset="utf-8"> 
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <title>BookStoreApp-3-4-5</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="js/app.js"></script>
+    <script src="js/StoreController.js"></script>
+    <script src="js/BooksController.js"></script>
+</head>
+<body >
+
+ 
+     <div class="container" id="#principal">
+            <nav id="Nav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+                <div class="container" id="letra">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                            <span class="sr-only"></span>Menu<i class="fa fa-bars"></i>
+                        </button>
+                        <img src="public/img/logo.png" alt="logo" id="img1">
+                        <a  class="navbar-brand" href="index.html"><b>BookStoreApp</b></a>
+                    </div>
+                </div>
+            </nav>
+
+             <header>
+                <div class="container-fluid" id="inicio">
+                    <div class="row">
+                        <div class="col-lg-12 text-center" id="inicio-2">
+                            <img id="img3" src="public/img/headers.jpg" alt="">
+                            <div class="text">
+                                <h1 class="name" style="font-size: 250%;"><b>BookstoreApp</b></h1>
+                                <hr style=" border: solid; color: black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+    </div>
+	
+    <div ng-view></div>
+
+    <hr>
+    <footer class="text-center" >
+                <div class="footer-above">
+                    <div class="container-fluid">
+                        <div class="row">
+                                <h3><b>Visitanos en: </b></h3>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="www.facebook.com"><img id="enlaces" src="public/img/fbb.png" alt="" width="70"></a>
+                                    </li>
+                                    <li>
+                                        <a href="www.twitter.com"><img id="enlaces" src="public/img/twt.png" alt="" width="62"></a>
+                                    </li>
+                                    <li>
+                                        <a href="www.instagram.com"><img id="enlaces" src="public/img/insta-logo.png" alt="" width="70"></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+    </html>

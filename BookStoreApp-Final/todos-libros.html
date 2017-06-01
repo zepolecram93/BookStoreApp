@@ -1,0 +1,40 @@
+     <div class="container" id="#principal">
+            <nav id="Nav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+                <div class="container" id="letra">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                            <span class="sr-only"></span>Menu<i class="fa fa-bars"></i>
+                        </button>
+                        <img src="public/img/logo.png" alt="logo" id="img1">
+                        <a  class="navbar-brand" href="index.html"><b>BookStoreApp</b></a>
+                    </div>
+                     <div class="collapse navbar-collapse" id="menu">
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li>
+                                <p>
+                                Titulo: <input style="height: 25px;" placeholder="BUSCAR" ng-model="query.titulo">
+                                <strong>Ordenar</strong>
+                            <select ng-model="orderField">
+                                <option value="id" >Id</option>
+                                <option value="titulo">Titulo</option>
+                                <option value="editorial">Editorial</option>
+                             </select>
+                                </p>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+      </div>
+
+    <h2 style="margin-left: 10%; margin-top: 0%; color: Black"><b>Libros</b></h2>
+
+    <ul>
+        <li ng-repeat="libs in libros | filter:query | orderBy:orderField">
+            <div ng-include src=" 'detalle-libro.html' "></div>
+        </li>
+    </ul>
+
+
